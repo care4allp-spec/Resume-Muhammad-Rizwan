@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سید محمد رضوان شاہ - ٹیکسٹائل پروڈکشن اینڈ مارکیٹنگ پورٹ فولیو</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.8; padding: 30px 15px; direction: rtl; text-align: right; }
+        .wrapper { max-width: 1100px; margin: 0 auto; }
+        
+        .lang-switcher { display: flex; justify-content: flex-start; margin-bottom: 20px; }
+        .lang-link { background: var(--secondary); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; text-decoration: none; font-size: 0.9rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+        header { background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%); color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        header h1 { font-size: 2.6rem; margin-bottom: 5px; font-weight: 700; }
+        header p { color: #94a3b8; font-size: 1.25rem; margin-bottom: 20px; font-weight: 500; }
+        
+        .contact-bar { display: flex; flex-wrap: wrap; gap: 25px; margin-bottom: 20px; font-size: 0.95rem; }
+        .contact-bar a, .contact-bar span { color: #cbd5e1; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        
+        .btn-box { display: flex; gap: 15px; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; cursor: pointer; transition: all 0.2s; }
+        .btn-p { background: var(--secondary); color: white; border: none; }
+        .btn-p:hover { background: #1d4ed8; transform: translateY(-2px); }
+        .btn-o { background: transparent; color: #cbd5e1; border: 2px solid #475569; }
+        .btn-o:hover { border-color: white; color: white; }
+
+        .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        @media (max-width: 868px) { .layout { grid-template-columns: 1fr; } }
+        
+        section { background: var(--card); padding: 30px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02); }
+        section h2 { font-size: 1.4rem; color: var(--primary); border-bottom: 2px solid var(--border); padding-bottom: 10px; margin-bottom: 20px; font-weight: 700; }
+
+        .job { margin-bottom: 25px; }
+        .job h3 { font-size: 1.2rem; color: var(--primary); font-weight: 700; }
+        .job h4 { color: var(--secondary); font-size: 1.05rem; font-weight: 600; margin-bottom: 5px; }
+        .job .date { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px; font-weight: 500; }
+        
+        ul { list-style: none; }
+        ul li { position: relative; padding-right: 20px; margin-bottom: 8px; font-size: 0.98rem; }
+        ul li::before { content: "•"; color: var(--secondary); position: absolute; right: 0; font-weight: bold; font-size: 1.3rem; line-height: 1.1; }
+
+        .skill-group { margin-bottom: 15px; }
+        .skill-group h3 { font-size: 0.9rem; margin-bottom: 8px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { background: #eff6ff; color: var(--secondary); padding: 5px 12px; border-radius: 6px; font-size: 0.88rem; font-weight: 600; border: 1px solid #dbeafe; }
+        .tag-t { background: #f0fdf4; color: #16a34a; border: 1px solid #dcfce7; }
+
+        .box-letter { background: #f8fafc; border: 1px dashed var(--border); padding: 25px; border-radius: 6px; font-size: 0.98rem; white-space: pre-line; color: #334155; text-align: justify; }
+        
+        .form-input { margin-bottom: 15px; }
+        .form-input label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; color: var(--primary); }
+        .form-input input, .form-input textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.95rem; background: #fafafa; }
+        
+        footer { text-align: center; padding: 20px; color: var(--text-muted); font-size: 0.9rem; margin-top: 30px; border-top: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- BACK TO ENGLISH BUTTON -->
+        <div class="lang-switcher">
+            <a href="index.html" class="lang-link">English میں دیکھیں / Switch to English</a>
+        </div>
+
+        <header>
+            <h1>سید محمد رضوان شاہ</h1>
+            <p>سینیئر ٹیکسٹائل مارکیٹنگ اور پروڈکشن آپریشنز مینیجر</p>
+            <div class="contact-bar">
+                <span>سرفراز کالونی، جی ایم آباد، فیصل آباد، پاکستان</span>
+                <span>+92 322 7020000</span>
+                <span>Rizwanh871@gmail.com</span>
+            </div>
+            <div class="btn-box">
+                <a href="resume_urdu.pdf" download class="btn btn-p">ریزمے ڈاؤن لوڈ کریں (PDF)</a>
+                <a href="#contact-sec" class="btn btn-o">رابطہ کریں</a>
+            </div>
+        </header>
+
+        <div class="layout">
+            <div class="main-side">
+                <section>
+                    <h2>پیشہ ورانہ پروفائل</h2>
+                    <p>ٹیکسٹائل انڈسٹری میں 19 سال سے زیادہ کا طویل اور شاندار تجربہ۔ زیادہ تر ملازمتوں میں مل مالکان (Mill Owners) کے ساتھ براہ راست ڈیلنگ اور کاروباری مقاصد حاصل کرنے کا وسیع تیکنیکی و تجارتی تجربہ۔ یارن پرچیزنگ، گرے کپڑے کی جانچ، بلیچنگ، ڈائینگ، روٹری پرنٹنگ، اور جدید ترین ڈیجیٹل پرنٹنگ کے تمام مراحل پر مکمل کنٹرول۔ سٹینٹر (Stenter) اور کلینڈر (Calendar) جیسی ایڈوانسڈ فنشنگ مشینری کو چلانے، کپڑے کے نقائص کو دور کرنے اور اعلیٰ کوالٹی برقرار رکھنے میں ماہر۔ اس کے ساتھ ساتھ سیلز ٹیکس انوائسز کی خرید و فروخت، انوینٹری مینجمنٹ اور پرنٹنگ یونٹس کے لیے پرنٹنگ پارٹیز کا بندوبست کرنے میں مہارت تاکہ مل کی پروڈکشن مسلسل برقرار رہے۔</p>
+                </section>
+
+                <section>
+                    <h2>کام کا تجربہ</h2>
+                    <div class="job">
+                        <h3>مارکیٹنگ اور پروڈکشن مینیجر</h3>
+                        <h4>ڈیلن ٹیکسٹائل، فیصل آباد</h4>
+                        <div class="date">2018 - موجودہ</div>
+                        <ul>
+                            <li>مل مالکان کے ساتھ براہ راست تعاون کے تحت ایکسپورٹ اور لوکل ٹیکسٹائل آرڈرز کی مکمل نگرانی۔</li>
+                            <li>بلیچنگ، ڈائینگ اور جدید ڈیجیٹل پرنٹنگ کے ہائی-کپیسٹی پروڈکشن پلانز کی ہیڈلنگ۔</li>
+                            <li>سٹینٹر اور کلینڈر مشینوں کی سیٹنگز کو بہتر بنا کر کپڑے کے نقائص اور فنشنگ کے مسائل کا خاتمہ۔</li>
+                            <li>مواد کے لیے سیلز ٹیکس انوائسز کے میکنزم کو سنبھالنا، بہترین ڈیلنگ سے لاگت میں 10٪ کمی لانا۔</li>
+                            <li>پرنٹنگ یونٹس کی مسلسل پیداواری صلاحیت کو برقرار رکھنے کے لیے مارکیٹ سے پرنٹنگ پارٹیز فراہم کرنا۔</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>مارکیٹنگ اور پروڈکشن مینیجر</h3>
+                        <h4>اے اے ٹیکسٹائل، کھڑیانوالہ، فیصل آباد</h4>
+                        <div class="date">2006 - 2018</div>
+                        <ul>
+                            <li>یارن سورسنگ، کپڑے کے معیار کی جانچ اور کنٹینر لوڈنگ سمیت ایکسپورٹ آرڈرز کے تمام مراحل کی کوآرڈینیشن۔</li>
+                            <li>بڑے پیمانے پر صنعتی فروخت (Industrial Sales) اور تھرڈ پارٹی پروسیسنگ ملز کے کنٹریکٹس کے لیے مل مالکان کے ساتھ براہ راست ڈیلنگ۔</li>
+                            <li>بین الاقوامی ایکسپورٹ معیار اور خریداروں کی چیک لسٹ کے مطابق پروڈکشن ورک فلو کا آڈٹ۔</li>
+                            <li>صارفین کی تیکنیکی شکایات کا فوری تدارک اور ایکسپورٹ ٹیکس انوائسز و دستاویزات کی فائلنگ۔</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>پیشہ ورانہ کور لیٹر</h2>
+                    <div class="box-letter">
+بخدمت ہائرنگ مینیجر،
+
+میں ٹیکسٹائل آپریشنز اور مینجمنٹ پوزیشن کے لیے اپنی خدمات پیش کرنا چاہتا ہوں۔ فیصل آباد کے ٹیکسٹائل حب میں مل مالکان کے ساتھ براہ راست کام کرنے کا 19 سالہ تجربہ مجھے یارن پرچیزنگ، گرے کلوتھ، بلیچنگ، ڈائینگ، روٹری پرنٹنگ اور ڈیجیٹل پرنٹنگ کی گہری تیکنیکی سمجھ عطا کرتا ہے۔
+
+میرا تجربہ سٹینٹر اور کلینڈر جیسی فنشنگ مشینری کو ایڈجسٹ کرنے، کپڑے کے نقائص کو دور کرنے اور آئی ایس او معیارات نافذ کرنے پر محیط ہے۔ کاروباری سطح پر، میں سیلز ٹیکس انوائسز کے میکنزم، پرچیزنگ اور مل کی پروڈکشن برقرار رکھنے کے لیے پرنٹنگ پارٹیز کے نیٹ ورک کو سنبھالنے میں مکمل مہارت رکھتا ہوں۔ میں آپ کے ساتھ اس گفتگو کا منتظر ہوں کہ میرا یہ تجربہ آپ کی کمپنی کے لیے کس طرح مفید ثابت ہو سکتا ہے۔
+
+نیک تمناؤں کے ساتھ،
+سید محمد رضوان شاہ
+                    </div>
+                </section>
+            </div>
+
+            <div class="sub-side">
+                <section>
+                    <h2>مهارتوں کا خلاصہ</h2>
+                    <div class="skill-group">
+                        <h3>تیکنیکی اور بنیادی ہنر</h3>
+                        <div class="tags">
+                            <span class="tag tag-t">ڈیجیٹل ٹیکسٹائل پرنٹنگ</span>
+                            <span class="tag tag-t">ڈائینگ اور بلیچنگ</span>
+                            <span class="tag tag-t">سٹینٹر اور کلینڈر مینجمنٹ</span>
+                            <span class="tag tag-t">کپڑے کے نقائص کو دور کرنا</span>
+                            <span class="tag tag-t">سیلز ٹیکس انوائسز ٹریڈنگ</span>
+                            <span class="tag tag-t">یارن اور گرے خرید و فروخت</span>
+                        </div>
+                    </div>
