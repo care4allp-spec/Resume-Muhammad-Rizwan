@@ -8,7 +8,6 @@
         :root {
             --primary: #0f172a;
             --secondary: #2563eb;
-            --accent: #3b82f6;
             --text-main: #1e293b;
             --text-muted: #64748b;
             --bg: #f8fafc;
@@ -16,84 +15,73 @@
             --border: #e2e8f0;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; padding: 30px 15px; transition: all 0.3s ease; }
-        .wrapper { max-width: 1140px; margin: 0 auto; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; padding: 30px 15px; }
+        .wrapper { max-width: 1100px; margin: 0 auto; }
         
-        /* Language Selector Banner */
-        .lang-switcher { display: flex; justify-content: flex-end; margin-bottom: 15px; }
-        .lang-btn { background: var(--secondary); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .lang-switcher { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+        .lang-link { background: var(--secondary); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; text-decoration: none; font-size: 0.9rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
 
-        header { background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%); color: white; padding: 45px; border-radius: 16px; margin-bottom: 30px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
-        header h1 { font-size: 2.6rem; margin-bottom: 5px; font-weight: 700; letter-spacing: -0.02em; }
-        header p { color: #94a3b8; font-size: 1.25rem; margin-bottom: 25px; font-weight: 500; }
+        header { background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%); color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; }
+        header h1 { font-size: 2.5rem; margin-bottom: 5px; }
+        header p { color: #94a3b8; font-size: 1.2rem; margin-bottom: 20px; }
         
-        .contact-bar { display: flex; flex-wrap: wrap; gap: 25px; margin-bottom: 25px; font-size: 0.95rem; }
+        .contact-bar { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; font-size: 0.95rem; }
         .contact-bar a, .contact-bar span { color: #cbd5e1; text-decoration: none; display: flex; align-items: center; gap: 8px; }
         
         .btn-box { display: flex; gap: 15px; }
-        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; cursor: pointer; transition: all 0.2s; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; cursor: pointer; }
         .btn-p { background: var(--secondary); color: white; border: none; }
-        .btn-p:hover { background: #1d4ed8; transform: translateY(-2px); }
         .btn-o { background: transparent; color: #cbd5e1; border: 2px solid #475569; }
-        .btn-o:hover { border-color: white; color: white; }
 
         .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
         @media (max-width: 868px) { .layout { grid-template-columns: 1fr; } }
         
-        section { background: var(--card); padding: 35px; border-radius: 14px; border: 1px solid var(--border); margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02); }
-        section h2 { font-size: 1.45rem; color: var(--primary); border-bottom: 2px solid var(--border); padding-bottom: 12px; margin-bottom: 22px; font-weight: 700; }
+        section { background: var(--card); padding: 30px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02); }
+        section h2 { font-size: 1.4rem; color: var(--primary); border-bottom: 2px solid var(--border); padding-bottom: 10px; margin-bottom: 20px; font-weight: 700; }
 
-        .job { margin-bottom: 30px; position: relative; }
-        .job h3 { font-size: 1.2rem; color: var(--primary); font-weight: 700; }
-        .job h4 { color: var(--secondary); font-size: 1.05rem; font-weight: 600; margin-bottom: 5px; }
-        .job .date { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; font-weight: 500; }
+        .job { margin-bottom: 25px; }
+        .job h3 { font-size: 1.15rem; color: var(--primary); }
+        .job h4 { color: var(--secondary); font-size: 1rem; margin-bottom: 5px; }
+        .job .date { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px; }
         
         ul { list-style: none; }
-        ul li { position: relative; padding-left: 20px; margin-bottom: 10px; font-size: 0.98rem; }
-        ul li::before { content: "•"; color: var(--secondary); position: absolute; left: 0; font-weight: bold; font-size: 1.3rem; line-height: 1.1; }
+        ul li { position: relative; padding-left: 20px; margin-bottom: 8px; font-size: 0.95rem; }
+        ul li::before { content: "•"; color: var(--secondary); position: absolute; left: 0; font-weight: bold; font-size: 1.2rem; }
 
-        .skill-group { margin-bottom: 20px; }
-        .skill-group h3 { font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; color: var(--primary); letter-spacing: 0.05em; }
+        .skill-group { margin-bottom: 15px; }
+        .skill-group h3 { font-size: 0.9rem; margin-bottom: 8px; text-transform: uppercase; color: var(--text-muted); }
         .tags { display: flex; flex-wrap: wrap; gap: 8px; }
-        .tag { background: #eff6ff; color: var(--secondary); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; font-weight: 600; border: 1px solid #dbeafe; }
+        .tag { background: #eff6ff; color: var(--secondary); padding: 5px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; border: 1px solid #dbeafe; }
         .tag-t { background: #f0fdf4; color: #16a34a; border: 1px solid #dcfce7; }
 
-        .box-letter { background: #f8fafc; border: 1px dashed var(--border); padding: 25px; border-radius: 8px; font-size: 0.98rem; white-space: pre-line; color: #334155; }
+        .box-letter { background: #f8fafc; border: 1px dashed var(--border); padding: 20px; border-radius: 6px; font-size: 0.95rem; white-space: pre-line; color: #334155; }
         
         .form-input { margin-bottom: 15px; }
-        .form-input label { display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; color: var(--primary); }
-        .form-input input, .form-input textarea { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 0.95rem; background: #fafafa; }
-        .form-input input:focus, .form-input textarea:focus { outline: none; border-color: var(--secondary); background: white; }
+        .form-input label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px; }
+        .form-input input, .form-input textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.95rem; background: #fafafa; }
         
-        footer { text-align: center; padding: 25px; color: var(--text-muted); font-size: 0.9rem; margin-top: 40px; border-top: 1px solid var(--border); }
-
-        /* RTL support for Urdu */
-        .rtl { direction: rtl; text-align: right; }
-        .rtl ul li { padding-left: 0; padding-right: 20px; }
-        .rtl ul li::before { left: auto; right: 0; }
-        .rtl .lang-switcher { justify-content: flex-start; }
+        footer { text-align: center; padding: 20px; color: var(--text-muted); font-size: 0.9rem; margin-top: 30px; }
     </style>
 </head>
 <body>
 
     <div class="wrapper">
-        <!-- LANGUAGE TOGGLE BUTTON -->
+        <!-- LANGUAGES TOGGLE BUTTON (Pure HTML Link Switcher) -->
         <div class="lang-switcher">
-            <button class="lang-btn" onclick="toggleLanguage()" id="lang-toggle-btn">اردو میں دیکھیں / Switch to Urdu</button>
+            <a href="index_urdu.html" class="lang-link">اردو میں دیکھیں / Switch to Urdu</a>
         </div>
 
         <header>
-            <h1 id="txt-name">SYED MUHAMMAD RIZWAN SHAH</h1>
-            <p id="txt-title">Senior Textile Marketing & Production Operations Manager</p>
+            <h1>SYED MUHAMMAD RIZWAN SHAH</h1>
+            <p>Senior Textile Marketing & Production Operations Manager</p>
             <div class="contact-bar">
-                <span id="txt-address">Sarfraz Colony G.M. Abad, Faisalabad, Pakistan</span>
+                <span>Sarfraz Colony G.M. Abad, Faisalabad, Pakistan</span>
                 <span>+92 322 7020000</span>
                 <span>Rizwanh871@gmail.com</span>
-                <a href="#" target="_blank">LinkedIn</a>
             </div>
             <div class="btn-box">
-                <a href="resume_english.pdf" download class="btn btn-p" id="txt-dl-btn">Download Resume (PDF)</a>
-                <a href="#contact-sec" class="btn btn-o" id="txt-git-btn">Get In Touch</a>
+                <a href="resume_english.pdf" download class="btn btn-p">Download Resume (PDF)</a>
+                <a href="#contact-sec" class="btn btn-o">Get In Touch</a>
             </div>
         </header>
 
@@ -101,17 +89,17 @@
             <!-- LEFT COLUMN -->
             <div class="main-side">
                 <section>
-                    <h2 id="title-profile">Professional Profile</h2>
-                    <p id="txt-profile">Accomplished, highly energetic, and results-driven Textile Marketing and Production Professional with over 19 years of extensive experience managing end-to-end local and export operations within Pakistan’s premier textile processing industry. Proven expertise working directly with Textile Mill Owners to achieve corporate targets. Expertly proficient across core cycles: Yarn Procurement, Grey Cloth Validation, Bleaching, Dyeing, Rotary Printing, High-Speed Digital Printing, and Fabric Finishing (Stenter & Calendar machinery). Highly skilled in managing Sales Tax Invoice trading, procurement logistics, and securing corporate printing parties to ensure continuous factory production grids.</p>
+                    <h2>Professional Profile</h2>
+                    <p>Accomplished, highly energetic, and results-driven Textile Marketing and Production Professional with over 19 years of extensive experience managing end-to-end local and export operations within Pakistan’s premier textile processing industry. Proven expertise working directly with Textile Mill Owners to achieve corporate targets. Expertly proficient across core cycles: Yarn Procurement, Grey Cloth Validation, Bleaching, Dyeing, Rotary Printing, High-Speed Digital Printing, and Fabric Finishing (Stenter & Calendar machinery). Highly skilled in managing Sales Tax Invoice trading, procurement logistics, and securing corporate printing parties to ensure continuous factory production grids.</p>
                 </section>
 
                 <section>
-                    <h2 id="title-experience">Work Experience</h2>
+                    <h2>Work Experience</h2>
                     <div class="job">
-                        <h3 id="job1-title">Marketing & Production Manager</h3>
-                        <h4 id="job1-company">Delin Textile, Faisalabad</h4>
+                        <h3>Marketing & Production Manager</h3>
+                        <h4>Delin Textile, Faisalabad</h4>
                         <div class="date">2018 - PRESENT</div>
-                        <ul id="job1-bullets">
+                        <ul>
                             <li>Direct end-to-end export and local textile operations under direct collaboration with Mill Owners.</li>
                             <li>Supervise high-capacity manufacturing cycles including Bleaching, Dyeing, and modern Digital Printing workflows.</li>
                             <li>Optimize Stenter and Calendar machine configurations to eliminate structural fabric defects and finishing marks.</li>
@@ -120,10 +108,10 @@
                         </ul>
                     </div>
                     <div class="job">
-                        <h3 id="job2-title">Marketing & Production Manager</h3>
-                        <h4 id="job2-company">AA Textile, Khurrianwala, Faisalabad</h4>
+                        <h3>Marketing & Production Manager</h3>
+                        <h4>AA Textile, Khurrianwala, Faisalabad</h4>
                         <div class="date">2006 - 2018</div>
-                        <ul id="job2-bullets">
+                        <ul>
                             <li>Oversaw complete export lifecycle coordination including yarn sourcing, grey fabric quality analysis, and container loading logistics.</li>
                             <li>Partnered directly with textile mill ownership to manage large-scale industrial sales and third-party processing mill contracts.</li>
                             <li>Audited processing workflows for compliance with international export standards and strict buyer checklists.</li>
@@ -133,9 +121,31 @@
                 </section>
 
                 <section>
-                    <h2 id="title-cover">Professional Cover Letter</h2>
-                    <div class="box-letter" id="txt-cover">
+                    <h2>Professional Cover Letter</h2>
+                    <div class="box-letter">
 Dear Hiring Manager,
 
 I am writing to express my interest in the Senior Textile Operations & Management position. With over 19 years of robust experience driving production operations and commercial marketing under direct collaboration with Textile Mill Owners in Faisalabad, I bring deep technical fluency across Yarn Procurement, Grey Cloth, Bleaching, Dyeing, Rotary Printing, and next-gen Digital Printing. 
 
+My expertise includes optimizing advanced finishing machinery like Stenters and Calendars, systematically resolving fabric defects, and enforcing top quality. Commercially, I am expert in handling Sales Tax Invoice mechanisms, raw material purchasing, and generating printing party networks to keep machinery running at peak performance. I welcome the opportunity to discuss how my multi-dimensional textile mastery can benefit your organization.
+
+Sincerely,
+Syed Muhammad Rizwan Shah
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="sub-side">
+                <section>
+                    <h2>Skills Summary</h2>
+                    <div class="skill-group">
+                        <h3>Core & Technical Skills</h3>
+                        <div class="tags">
+                            <span class="tag tag-t">Digital Textile Printing</span>
+                            <span class="tag tag-t">Dyeing & Bleaching</span>
+                            <span class="tag tag-t">Stenter & Calendar Mgmt</span>
+                            <span class="tag tag-t">Fabric Defect Rectification</span>
+                            <span class="tag tag-t">Sales Tax Invoice Trading</span>
+                            <span class="tag tag-t">Yarn & Grey Procurement</span>
+                        </div>
